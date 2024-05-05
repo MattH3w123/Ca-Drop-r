@@ -1,0 +1,624 @@
+@media (max-width: 1450px) {
+
+    .container main section#opis-2 .text-contr-2 {
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2.4rem;
+    }
+
+    .container main section#opis-2 .text-contr-2 iframe {
+        width: 800px;
+        height: 400px;
+    }
+
+    .container main section#opis-2 .text-contr-2  .right-opis {
+        width: 70%;
+    }
+    .container main section#opis-2 .text-contr-2 .thrt-txt {
+        width: 60%;
+    }
+
+    .container main section#opis-2 .text-contr-2 .img-ctr-2 {
+        width: 50%;
+    }
+
+    .container main section#products .card-produkt {
+        gap: 2rem;
+    }
+
+
+    .container footer .navigation-row{
+        width: 75%;
+    }
+
+    .container footer .copyright hr {
+        width: 80%;
+    }
+
+    .container main section#photo-see .photo-cnt-aut {
+        grid-template-columns: auto auto;
+    }
+
+    .container main section#photo-see .photo-cnt-aut .car-photo-w {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1300px) {
+
+    .container main section#opis-2 .text-contr-2 iframe {
+        width: 750px;
+        height: 400px;
+    }
+
+    .container main section#opis-2 .text-contr-2  .right-opis {
+        width: 80%;
+    }
+    .container main section#opis-2 .text-contr-2 .thrt-txt {
+        width: 64%;
+    }
+
+    .container main section#opis-gl .op-ct-cont {
+        width: 80%;
+    }
+
+    .container main section#opis-2 .text-contr-2 .img-ctr-2 {
+        width: 54%;
+    }
+
+    .container main section#products .card-produkt {
+        width: auto;
+        grid-template-columns: auto;
+        grid-gap: 30px 40px;
+    }
+    
+    .container main section#products .card-produkt .card-car a {
+        width: 44rem;
+    }
+}
+
+@media (max-width: 1250px) {
+
+    .container main section#baner {
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+    }
+   
+    .container main section#baner .text-contr h1 {
+        margin: 10px auto;
+    }
+
+    .container main section#baner .text-contr h3 {
+        padding-bottom: 10px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .container main section#baner .text-contr p {
+        display: none;
+    }
+
+    .container main section#baner .text-contr button {
+        margin: 10px auto;
+    }
+
+    .container main section#baner .text-contr button a  {
+        text-align: center;
+        border-radius: 10px 23px 19px 15px;
+        padding: .45rem 1.5rem;
+    }
+
+    .container main section#baner .cars-contr {
+        margin: 40px 0px 0px 0px;
+        height: 413px;
+    }
+
+    .container main section#opis {
+        gap: 2rem;
+    }
+
+}
+
+@media (max-width: 1085px) {
+
+    .container header .better-h {
+        padding: 0px 50px;
+    }
+
+    .container main section#opis-2 .text-contr-2 iframe {
+        width: 710px;
+        height: 390px;
+    }
+
+    .container main section#opis-2 .text-contr-2  .right-opis {
+        width: 90%;
+    }
+    .container main section#opis-2 .text-contr-2 .thrt-txt {
+        width: 69%;
+    }
+
+    .container main section#opis-gl .op-ct-cont {
+        width: 90%;
+    }
+
+    .container main section#opis-2 .text-contr-2 .img-ctr-2 {
+        width: 64%;
+    }
+
+    .container main section#products .card-produkt {
+        width: auto;
+        grid-template-columns: auto;
+        grid-gap: 30px 40px;
+    }
+    
+    .container main section#products .card-produkt .card-car a {
+        width: 44rem;
+    }
+
+    .container main section#photo-see .photo-cnt-aut:nth-child(3) {
+        display: none;
+    }
+
+}
+
+@media (max-width: 950px) {
+
+    .container header .better-h {
+        width: 80%;
+        padding: 0px 30px;
+    }
+
+    .container main section#opis-2 .text-contr-2 iframe {
+        width: 650px;
+        height: 370px;
+    }
+
+    .container main section#opis-2 .text-contr-2  .right-opis {
+        width: 99%;
+    }
+    .container main section#opis-2 .text-contr-2 .thrt-txt {
+        width: 76%;
+    }
+
+    .container main section#opis-gl .op-ct-cont {
+        width: 99%;
+    }
+
+    .container main section#opis-2 .text-contr-2 .img-ctr-2 {
+        width: 74%;
+    }
+
+    .container main section#photo-see {
+        height: auto;
+    }
+
+    .container main section#photo-see .photo-cnt-aut {
+        grid-template-columns: auto;
+    }
+
+    .container main section#photo-see .photo-cnt-aut img {
+        height: 40vh;
+    }
+    
+    .container footer .navigation-row{
+        width: 85%;
+    }
+
+    .container footer .copyright hr {
+        width: 90%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .container header .better-h {
+        width: 85%;
+        padding: 0px 10px;
+    }
+
+    .container main section#opis {
+        gap: 1rem;
+    }
+
+    .container main section#opis-2 .text-contr-2 iframe {
+        width: 550px;
+        height: 370px;
+    }
+
+    .container main section#opis-2 .text-contr-2 .opis-place-r {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .container main section#opis-2 .text-contr-2 {
+        width: auto;
+    }
+
+    .container main section#opis-2 .text-contr-2 .opis-place-r .frst-txt, .secnd-txt {
+        width: 90%;
+    }
+
+    .container main section#opis-2 .text-contr-2 .right-opis {
+        width: 99%;
+    }
+    .container main section#opis-2 .text-contr-2 .thrt-txt {
+        width: 76%;
+    }
+
+    .container main section#stck-phot {
+        height: 45vh;
+    }
+
+    .container main section#opis-gl .op-ct-cont {
+        width: 99%;
+        flex-direction: column;
+    }
+
+    .container main section#opis-gl .op-ct-c-revers {
+        width: 99%;
+        flex-direction: column-reverse;
+    }
+
+    .container main section#opis-gl .op-ct-cont .texte {
+        width: 80%;
+    }
+
+    .container main section#opis-gl .op-ct-cont .texte h1 {
+        padding: 0;
+    }
+
+    .container main section#opis-gl .op-ct-cont .texte p {
+        padding: 0;
+    }
+
+    .container main section#opis-gl .op-ct-cont .imge {
+        width: 70%;
+        height: 220px;
+    }
+
+    .container main section#opis-2 .text-contr-2 .img-ctr-2 {
+        width: 74%;
+    }
+
+    .container main section#photo-see {
+        height: auto;
+    }
+
+    .container main section#photo-see .photo-cnt-aut {
+        grid-template-columns: auto;
+    }
+
+    .container main section#photo-see .photo-cnt-aut img {
+        height: 40vh;
+    }
+    
+    .container main section#products .card-produkt {
+        width: auto;
+        grid-template-columns: auto;
+        grid-gap: 30px 40px;
+    }
+    
+    .container main section#products .card-produkt .card-car a {
+        width: 40rem;
+    }
+
+    .container main section#baner .cars-contr {
+        margin: 40px 0px 0px 0px;
+        height: 413px;
+        width: 600px;
+    }
+
+    .container footer .navigation-row{
+        width: 85%;
+    }
+
+    .container footer .copyright hr {
+        width: 90%;
+    }
+}
+
+@media (max-width: 660px) {
+
+    .container main section#opis-2 .text-contr-2 iframe {
+        width: 460px;
+        height: 310px;
+    }
+
+    .container main section#opis-2 .text-contr-2 .opis-place-r {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .container main section#opis-2 .text-contr-2 {
+        width: auto;
+    }
+
+    .container main section#opis-2 .text-contr-2 .opis-place-r .frst-txt, .secnd-txt {
+        width: 95%;
+    }
+
+    .container main section#opis-2 .text-contr-2 .right-opis {
+        width: 99%;
+    }
+    .container main section#opis-2 .text-contr-2 .thrt-txt {
+        width: 86%;
+    }
+    
+    .container main section#opis-2 .text-contr-2 .img-ctr-2 {
+        width: 84%;
+    }
+
+    .container main section#products .card-produkt {
+        width: auto;
+        grid-template-columns: auto;
+        grid-gap: 30px 40px;
+    }
+    
+    .container main section#products .card-produkt .card-car a {
+        width: 33rem;
+    }
+    
+    .container main section#opis {
+        gap: .1rem;
+    }
+
+    .container footer .navigation-row {
+        flex-direction: column;
+        gap: .6rem;
+        padding: 0;
+        width: 88%;
+    }
+
+    .container footer .navigation-row .navigation-f ul li a {
+        font-size: 18pt;
+    }
+
+    .container footer .navigation-row .socials a i {
+        font-size: 27pt;
+    }
+
+    .container footer .navigation-row .brand-logo-rb {
+        gap: 50px;
+    }
+
+    .container footer .navigation-row .brand-logo-rb a img {
+        width: 60px;
+        height: auto;
+    }
+
+    .container footer .copyright hr {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+   
+    .container header .in-header {
+        justify-content: center;
+        gap: 0;
+    }
+
+    .container header .in-header .logo a img {
+        display: none;
+    }
+
+    .container header .better-h {
+        width: 90%;
+        padding: 0px 10px;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .container header .better-h .logo a img {
+        display: none;
+    }
+    
+    .container main section#baner .cars-contr {
+        margin: 40px 0px 0px 0px;
+        height: auto;
+        width: 400px;
+    }
+
+    .container main section#opis-2 .text-contr-2 iframe {
+        width: 410px;
+        height: 310px;
+    }
+
+    .container main section#opis-2 .text-contr-2 .opis-place-r {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .container main section#opis-2 .text-contr-2 {
+        width: auto;
+    }
+
+    .container main section#opis-2 .text-contr-2 .opis-place-r .frst-txt, .secnd-txt {
+        width: 95%;
+    }
+
+    .container main section#opis-2 .text-contr-2 .right-opis {
+        width: 99%;
+    }
+    .container main section#opis-2 .text-contr-2 .thrt-txt {
+        width: 96%;
+    }
+    
+    .container main section#opis-2 .text-contr-2 .img-ctr-2 {
+        width: 94%;
+    }
+
+    .container main section#products .card-produkt {
+        width: auto;
+        grid-template-columns: auto;
+        grid-gap: 30px 40px;
+    }
+    
+    .container main section#products .card-produkt .card-car a {
+        width: 29rem;
+    }
+    
+    .container main section#opis {
+        gap: .1rem;
+    }
+
+    .container footer .navigation-row {
+        flex-direction: column;
+        gap: .6rem;
+        padding: 0;
+        width: 95%;
+    }
+
+    .container footer .navigation-row .navigation-f ul li a {
+        font-size: 18pt;
+    }
+
+    .container footer .navigation-row .socials a i {
+        font-size: 27pt;
+    }
+
+    .container footer .navigation-row .brand-logo-rb {
+        gap: 50px;
+    }
+
+    .container footer .navigation-row .brand-logo-rb a img {
+        width: 60px;
+        height: auto;
+    }
+
+    .container footer .copyright hr {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .container header .better-h {
+        width: 90%;
+        padding: 0px 10px;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .container header .better-h .logo a img {
+        display: none;
+    }
+    
+    .container main section#baner .text-contr {
+        width: auto;
+    } 
+
+    .container main section#baner .cars-contr {
+        margin: 40px 0px 0px 0px;
+        height: auto;
+        width: 370px;
+    }
+
+    .container main section#opis-2 .text-contr-2 iframe {
+        width: 320px;
+        height: 250px;
+    }
+
+    .container main section#opis-2 .text-contr-2 .opis-place-r {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .container main section#opis-2 .text-contr-2 {
+        width: auto;
+    }
+
+    .container main section#opis-2 .text-contr-2 .opis-place-r .frst-txt, .secnd-txt {
+        width: 97%;
+    }
+
+    .container main section#opis-2 .text-contr-2 .right-opis {
+        width: 99%;
+    }
+    .container main section#opis-2 .text-contr-2 .thrt-txt {
+        width: 86%;
+    }
+    
+    .container main section#opis-2 .text-contr-2 .img-ctr-2 {
+        width: 84%;
+    }
+
+    .container main section#opis-gl .op-ct-cont {
+        width: 99%;
+        flex-direction: column;
+    }
+
+    .container main section#opis-gl .op-ct-c-revers {
+        width: 99%;
+        flex-direction: column-reverse;
+    }
+
+    .container main section#opis-gl .op-ct-cont .texte {
+        width: 97%;
+    }
+
+    .container main section#opis-gl .op-ct-cont .texte h1 {
+        padding: 0;
+    }
+
+    .container main section#opis-gl .op-ct-cont .texte p {
+        padding: 0;
+    }
+
+    .container main section#opis-gl .op-ct-cont .imge {
+        width: 90%;
+        height: 200px;
+    }
+
+    .container main section#opis-2 .text-contr-2 .img-ctr-2 {
+        width: 94%;
+    }
+
+
+    .container main section#products .card-produkt {
+        width: auto;
+        grid-template-columns: auto;
+        grid-gap: 30px 40px;
+    }
+    
+    .container main section#products .card-produkt .card-car a {
+        width: 22rem;
+    }
+    
+    .container main section#opis {
+        gap: .1rem;
+    }
+
+    .container footer .navigation-row {
+        flex-direction: column;
+        gap: .6rem;
+        padding: 0;
+        width: 88%;
+    }
+
+    .container footer .navigation-row .navigation-f ul li a {
+        font-size: 18pt;
+    }
+
+    .container footer .navigation-row .socials a i {
+        font-size: 27pt;
+    }
+
+    .container footer .navigation-row .brand-logo-rb {
+        gap: 50px;
+    }
+
+    .container footer .navigation-row .brand-logo-rb a img {
+        width: 60px;
+        height: auto;
+    }
+
+    .container footer .copyright hr {
+        width: 100%;
+    }
+}

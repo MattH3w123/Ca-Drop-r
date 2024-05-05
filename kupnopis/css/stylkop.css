@@ -1,0 +1,889 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+    box-shadow: inset 0 0 6px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(75, 75, 75);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(151, 151, 151);
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    padding: 0px 200px;
+    background-color: rgba(0, 0, 0, 0);
+    /*backdrop-filter: saturate(180%) blur(4px);*/
+}
+
+.logo a img {
+    display: block;
+    width: auto;
+    height: 50px;
+    margin: 5px 0px;
+    position: relative;
+    object-position: center;
+    opacity: 1;
+    transition: .27s ease;
+}
+
+.logo a img:hover {
+    opacity: .7;
+}
+
+nav ul {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+    height: 60px;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    color: white;
+    background-color: transparent;
+    transition: all .3s ease-in;
+    opacity: 1;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    opacity: .8;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#baner {
+    height: 98vh;
+    padding: 40px 0px 10px 0px;
+}
+
+.bck-car-1 {
+    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img/bentley/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bck-car-2 {
+    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-bnr {
+    width: 100%;
+    height: 99%;
+    padding: 10px 10px 40px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: relative;
+}
+
+button {
+    width: auto;
+    height: auto;
+    border: none;
+    outline: none;
+    border-radius: 10px 23px 19px 15px;
+    align-items: center;
+    background-color: transparent;
+}
+
+.header-bnr button a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    padding: .55rem 1.5rem;
+    color: white;
+    background-color: rgb(212, 0, 0);
+    border-radius: 15px 15px 30px 30px;
+    opacity: 1;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: .1s ease-in;
+}
+
+.header-bnr button a:hover {
+    background-color: rgb(124, 0, 0);
+}
+
+.car-name {
+    width: auto;
+    height: 100px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-name h1 {
+    font-size: 2.4rem;
+    color: white;
+    font-weight: 600;
+    letter-spacing: .2rem;  
+    text-align: center; 
+}
+
+section#pkaz {
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 10px 30px 10px;
+    background: linear-gradient(to right, #232526, #414345);
+}
+
+.pkz-place {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.pkaz-lewo {
+    width: 39%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pkaz-lewo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-position: center;
+    position: relative;
+    border-radius: 20px;
+}
+
+.pkaz-prawo {
+    width: 45%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pkaz-prawo h1 {
+    font-size: 2.5rem;
+    color: white;
+    letter-spacing: .1rem;
+    padding: 0px 0px 10px 0px;
+    text-align: left;
+    width: fit-content;
+    font-family: 'Poppins', sans-serif;
+}
+
+.pkaz-prawo p {
+    font-size: 1.3rem;
+    text-align: justify;
+    color: white;
+    padding: 0px 0px 10px 0px; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.pkaz-prawo button {
+    width: auto;
+    height: auto;
+    border: none;
+    outline: none;
+    border-radius: 10px 23px 19px 15px;
+    margin-top: 20px;
+    align-items: center;
+    background-color: transparent;
+}
+
+.pkaz-prawo button a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    padding: .55rem 1.5rem;
+    color: white;
+    background-color: rgb(212, 0, 0);
+    border-radius: 15px 15px 30px 30px;
+    opacity: 1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: .1s ease-in;
+}
+
+.pkaz-prawo button a:hover {
+    background-color: rgb(124, 0, 0);
+}
+
+section#model {
+    min-height: 55vh;
+    padding: 30px 0px 40px 0px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .7)), url(../img/wp9116580-dark-street-4k-wallpapers.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-start;
+    gap: 2rem;
+}
+
+.nazwa-mdl {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.line {
+    width: 43%;
+    height: 1px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+ 
+.mdl-logo {
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mdl-logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    object-position: center;
+}
+
+.model-img {
+    width: 80%;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper {
+    width: 70%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+/*
+.model-img img {
+    width: auto;
+    height: 100%;
+    display: block;
+    object-position: center;
+    position: relative;
+}*/
+
+section#opis-zmg-1 {
+    height: auto;
+    padding: 50px 0px 60px 0px;
+    gap: 3rem;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, .9)), url(../img/wp13126175-futuristic-landscape-wallpapers.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title-cont {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tlt-logo {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.tlt-logo h1 {
+    color: rgb(221, 0, 0);
+    font-size: 2.7rem;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+.tlt-logo h2 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+.text-place-cont-p {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.op-cnt-t {
+    width: 90%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.img-cnt {
+    width: 38%;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-cnt img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.text-cnt-p {
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.text-cnt-p h1 {
+    color: rgb(255, 255, 255);
+    font-size: 1.99rem;
+    font-weight: 600;
+    padding: 20px 0px 1px 30px;
+    letter-spacing: .3rem;
+    position: relative;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text-cnt-p p {
+    color: rgb(255, 255, 255);
+    font-size: 1.34rem;
+    padding: 0px 0px 10px 5px;
+    text-align: justify;
+    position: relative;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+}
+
+section#opis-zmg-2 {
+    width: 100%;
+    height: auto;
+    padding: 40px 0px;
+    gap: 2.5rem;
+    background: linear-gradient(to left, #232526, #414345);
+    background-attachment: fixed;
+    justify-content: flex-start;
+}
+
+.tech-table {
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    padding: 20px;
+}
+
+.lew-tech-t {
+    width: 49%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+table {
+    width: 90%;
+    height: auto;
+    border-collapse: collapse;
+}
+
+table tr {
+    height: auto;
+}
+
+table tr td, th {
+    color: #fff;
+    font-size: 1.6rem;
+    border: 1px solid black;
+    padding: 7px 10px;
+}
+
+table tr th {
+    text-align: left;
+    letter-spacing: .1rem;
+    padding-left: 10px;
+    border-right: none; 
+}
+
+table tr td {
+    text-align: right;
+    padding-right: 10px;
+    border-left: none; 
+}
+
+table tr:nth-child(even) {
+    background-color: #414345;
+}
+
+table tr:nth-child(odd) {
+    background-color: #232526;
+}
+
+.praw-tech-t  {
+    width: 49%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section#vdio-car {
+    height: 55vh;
+    width: 100%;
+    padding: 0;
+    background: rgba(0, 0, 0, .3);
+}
+
+#vdio-car video {
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center center;
+    border: none;
+}
+
+section#opis-zmg-3 {
+    justify-content: flex-start;
+    padding: 60px 0px 40px 0px;
+    height: auto;
+    gap: 2rem;
+}
+
+.koszt-cara {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.koszt-cara h1 {
+    font-size: 2.7rem;
+    color: white;
+    font-weight: 600;
+    letter-spacing: .2rem;
+}
+
+.koszt-cara h2 {
+    font-size: 1.9rem;
+    color: rgb(180, 180, 180);
+    font-weight: 600;
+    letter-spacing: .1rem;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.img-place-cnk {
+    width: 90%;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-place-cnk img {
+    display: block;
+    width: auto;
+    height: 100%;
+    object-position: center;
+    position: relative;
+    border-radius: 30px;
+}
+
+section#opis-zmg-4 {
+    justify-content: flex-start;
+    height: auto;
+    padding: 30px 0px 40px 0px;
+    gap: 3rem;
+}
+
+.zamawianie {
+    width: 60%;
+    height: auto;
+    padding: 30px 15px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom,  #ba8b02, #000000);
+}
+
+.zamawianie form {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+}
+
+label {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.color-point {
+    padding: 5px 13px;
+    border-radius: 100%;
+    background-color: #ad0000;
+    font-size: 1.4rem;
+    color: white;
+    margin-right: 20px;
+}
+
+.zamaw-line {
+    display: block;
+    width: 99%;
+    height: 1px;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin: 30px 0px;
+
+}
+
+.select-totght {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.zamow-end {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.zamow-end button {
+    width: auto;
+    height: auto;
+    border: none;
+    outline: none;
+    border-radius: 10px 23px 19px 15px;
+    align-items: center;
+    background-color: transparent;
+}
+
+.zamow-end button a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    padding: .55rem 1.5rem;
+    color: white;
+    background-color: rgb(212, 0, 0);
+    border-radius: 15px 15px 30px 30px;
+    opacity: 1;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: .1s ease-in;
+}
+
+.zamow-end button a:hover {
+    background-color: rgb(124, 0, 0);
+}
+
+select {
+    width: 47%;
+    font-size: 1.1rem;
+    padding: 10px 6px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+input {
+    width: 47%;
+    font-size: 1.15rem;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+}
+
+.zgoda-pol {
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.zgoda-pol img {
+    height: 60px;
+    width: auto;
+    display: block;
+    position: relative;
+    object-position: center;
+
+}
+
+.pol {
+    font-weight: 500;
+    letter-spacing: none;
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}
+
+.sl-l-ctr {
+    margin: 0px 0px 15px 0px;
+}
+
+footer {
+    background-color: #000000;
+    /*background: linear-gradient(to top, #000000, #434343);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    min-height: 35px;
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.navigation-row {
+    width: 55%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    margin: 0 auto;
+    padding: 0px 0px 5px 0px;
+}
+
+.navigation-f {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.navigation-f ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+.navigation-f ul li a {
+    color: #fff;
+    margin: 10px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4rem;
+    opacity: 0.7;
+    transition: all .2s ease-in;
+    text-align: center;
+    text-transform: normal;
+    letter-spacing: .1rem;
+    font-weight: 600;
+}
+
+.navigation-f ul li a:hover {
+    opacity: 1;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+}
+
+.socials a {
+    text-decoration: none;
+    margin: 7px;
+    border-radius: 50%;  
+}
+
+.socials a i {
+    font-size: 25pt;
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    border-radius: 50%;
+    transition: all .4s ease-in-out;
+}
+
+.socials a:hover i {
+    color: #4e4e4e;
+}
+
+.copyright {
+    margin: 15px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright hr {
+    display: block;
+    width: 65%;
+    margin: 5px auto;
+    border: 1px solid rgb(255, 255, 255);
+    opacity: 0.5;
+}
+
+.copyright p {
+    color: #fff;
+    opacity: .6;
+    text-transform: normal;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 0 10px;
+    padding-top: 22px;
+    padding-bottom: 2px;
+    cursor: context-menu;
+    transition: all .3s ease-in;
+    width: fit-content;
+}
+
+.copyright p:hover {
+    opacity: 1;
+}

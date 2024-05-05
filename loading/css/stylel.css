@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background: linear-gradient(to right, #ff8008, #ffc837);
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.loader h1 {
+    color: rgb(22, 22, 22);
+    font-size: 2.9rem;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    animation: anmiah 2.76s infinite linear;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes anmiah {
+    0% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+
+    50% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-10px);
+    }
+}
+
+.loader img {
+    width: auto;
+    height: 130px;
+    display: block;
+    position: relative;
+    object-position: center;
+    animation: animak 3.4s linear infinite;
+}
+
+@keyframes animak {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    50% {
+        transform: rotate(-90deg);
+    }
+
+    100% {
+        transform: rotate(720deg);
+    }
+}

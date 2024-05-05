@@ -1,0 +1,371 @@
+@media (max-width: 1400px) {
+
+    .container header {
+        padding: 0px 100px;
+    }
+
+    .container main section#pkaz .pkz-place {
+        width: 90%;
+    }
+
+    .container main section#pkaz .pkz-place .pkaz-lewo {
+        width: 40%;
+    }
+
+    .container main section#pkaz .pkz-place .pkaz-prawo {
+        width: 50%;
+    } 
+
+    .container main section#model .nazwa-mdl {
+        width: 90%;
+    }
+
+    .container main section#model .model-img {
+        width: 99%;
+    }
+
+    .container main section#model .model-img .swiper {
+        width: 80%;
+    }
+
+    .container main section#opis-zmg-1 .title-cont .tlt-logo h1 {
+        word-break: break-word;
+        text-align: center;
+    }
+    
+    .container main section#opis-zmg-1 .text-place-cont-p {
+        width: 90%;
+    }
+
+    .container main section#opis-zmg-2 .title-cont .tlt-logo h1 {
+        word-break: break-word;
+        text-align: center;
+    }
+
+    .container main section#opis-zmg-2 .tech-table {
+        width: 95%;
+    }
+
+    .container main section#opis-zmg-3 .koszt-cara {
+        width: 90%;
+    }
+
+    .container main section#opis-zmg-3 .koszt-cara .img-place-cnk {
+        width: 100%;
+    }
+
+    .container main section#opis-zmg-4 .title-cont .tlt-logo h1, h2 {
+        word-break: break-word;
+        text-align: center;
+    }
+
+    .container main section#opis-zmg-4 .zamawianie {
+        width: 70%;
+    }
+
+    .container footer .navigation-row{
+        width: 85%;
+    }
+
+    .container footer .copyright hr {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    .container header {
+        padding: 0px 50px;
+    }
+
+    .container main section#pkaz .pkz-place {
+        width: 95%;
+    }
+
+    .container main section#pkaz .pkz-place .pkaz-lewo {
+        width: 38%;
+    }
+
+    .container main section#pkaz .pkz-place .pkaz-prawo {
+        width: 56%;
+    } 
+
+    .container main section#model .nazwa-mdl {
+        width: 90%;
+    }
+
+    .container main section#model .model-img {
+        width: 99%;
+    }
+
+    .container main section#model .model-img .swiper {
+        width: 90%;
+    }
+
+    .container main section#opis-zmg-1 .title-cont .tlt-logo h1 {
+        word-break: break-word;
+        text-align: center;
+    }
+    
+    .container main section#opis-zmg-1 .text-place-cont-p {
+        width: 98%;
+    }
+
+    .container main section#opis-zmg-2 .title-cont .tlt-logo h1 {
+        word-break: break-word;
+        text-align: center;
+    }
+
+    .container main section#opis-zmg-2 .tech-table {
+        width: 95%;
+        flex-direction: column;
+        gap: 0;
+        padding: 1px;
+    }
+
+    .container main section#opis-zmg-2 .tech-table .lew-tech-t, .praw-tech-t {
+        width: 80%;
+    }
+
+    .container main section#opis-zmg-3 {
+        gap: 1rem;
+    }
+
+    .container main section#opis-zmg-3 .koszt-cara {
+        width: 99%;
+    }
+
+    .container main section#opis-zmg-3 .koszt-cara .img-place-cnk {
+        width: 100%;
+    }
+
+    .container main section#opis-zmg-4 .title-cont .tlt-logo h1, h2 {
+        word-break: break-word;
+        text-align: center;
+    }
+
+    .container main section#opis-zmg-4 .zamawianie {
+        width: 85%;
+    }
+
+    .container footer .navigation-row{
+        width: 90%;
+    }
+
+    .container footer .copyright hr {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .container header {
+        padding: 0px 0px;
+    }
+
+    .container main section#pkaz {
+        height: auto;
+    }
+
+    .container main section#pkaz .pkz-place {
+        flex-direction: column;
+        gap: 1.3rem;
+        width: 95%;
+    }
+
+    .container main section#pkaz .pkz-place .pkaz-lewo {
+        width: 70%;
+        height: 240px;
+    }
+
+    .container main section#pkaz .pkz-place .pkaz-prawo {
+        width: 84%;
+    } 
+
+    .container main section#opis-zmg-1 .title-cont .tlt-logo h1 {
+        word-break: break-word;
+        text-align: center;
+    }
+    
+    .container main section#opis-zmg-1 .text-place-cont-p {
+        width: 99%;
+    }
+
+    .container main section#opis-zmg-1 .text-place-cont-p .op-cnt-t {
+        width: 95%;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .container main section#opis-zmg-1 .text-place-cont-p .op-ct-t-rever {
+        flex-direction: column-reverse;
+    }
+
+    .container main section#opis-zmg-1 .text-place-cont-p .op-cnt-t .text-cnt-p {
+        width: 80%;
+        gap: 20px;
+    }
+
+    .container main section#opis-zmg-1 .text-place-cont-p .op-cnt-t .img-cnt {
+        width: 80%;
+        height: 220px;
+    }
+
+    .container main section#opis-zmg-2 .title-cont .tlt-logo h1 {
+        word-break: break-word;
+        text-align: center;
+    }
+
+    .container main section#opis-zmg-2 .tech-table {
+        width: 95%;
+        flex-direction: column;
+        gap: 0;
+        padding: 1px;
+    }
+
+    .container main section#opis-zmg-2 .tech-table .lew-tech-t, .praw-tech-t {
+        width: 90%;
+    }
+
+    .container main section#opis-zmg-4 .title-cont .tlt-logo h1, h2 {
+        word-break: break-word;
+        text-align: center;
+    }
+
+    .container main section#opis-zmg-4 .zamawianie {
+        width: 95%;
+    }
+
+    .container footer .navigation-row{
+        width: 99%;
+    }
+
+    .container footer .copyright hr {
+        width: 99%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .container header {
+        justify-content: center;
+        gap: 0;
+    }
+
+    .container header .logo a img {
+        display: none;
+    }
+
+    .container main section#pkaz .pkz-place {
+        flex-direction: column;
+        gap: 1.3rem;
+        width: 95%;
+    }
+
+    .container main section#pkaz .pkz-place .pkaz-lewo {
+        width: 90%;
+        height: 240px;
+    }
+
+    .container main section#pkaz .pkz-place .pkaz-prawo {
+        width: 98%;
+    } 
+
+    .container main section#opis-zmg-1 .title-cont .tlt-logo h1 {
+        word-break: break-word;
+        text-align: center;
+    }
+    
+    .container main section#opis-zmg-1 .text-place-cont-p {
+        width: 99%;
+    }
+
+    .container main section#opis-zmg-1 .text-place-cont-p .op-cnt-t {
+        width: 95%;
+        gap: 40px;
+        flex-direction: column;
+    }
+
+    .container main section#opis-zmg-1 .text-place-cont-p .op-ct-t-rever {
+        flex-direction: column-reverse;
+    }
+
+    .container main section#opis-zmg-1 .text-place-cont-p .op-cnt-t .text-cnt-p {
+        width: 98%;
+        gap: 20px;
+    }
+
+    .container main section#opis-zmg-1 .text-place-cont-p .op-cnt-t .img-cnt {
+        width: 95%;
+        height: 220px;
+    }
+
+    .container main section#opis-zmg-2 .title-cont .tlt-logo h1 {
+        word-break: break-word;
+        text-align: center;
+    }
+
+    .container main section#opis-zmg-2 .tech-table {
+        width: 99%;
+        flex-direction: column;
+        gap: 0;
+        padding: 1px;
+    }
+
+    .container main section#opis-zmg-2 .tech-table .lew-tech-t, .praw-tech-t {
+        width: 90%;
+    }
+
+    .container main section#opis-zmg-4 .title-cont .tlt-logo h1, h2 {
+        word-break: break-word;
+        text-align: center;
+    }
+
+    .container main section#opis-zmg-4 .zamawianie {
+        width: 95%;
+    }
+
+    .container main section#opis-zmg-4 .zamawianie .zgoda-pol img {
+        display: none;
+    }
+
+    .container footer .navigation-row{
+        width: 99%;
+    }
+
+    .container footer .copyright hr {
+        width: 99%;
+    }
+
+    .container footer .navigation-row {
+        flex-direction: column;
+        gap: .6rem;
+        padding: 0;
+        width: 95%;
+    }
+
+    .container footer .navigation-row .navigation-f ul li a {
+        font-size: 18pt;
+    }
+
+    .container footer .navigation-row .socials a i {
+        font-size: 27pt;
+    }
+
+    .container footer .navigation-row .brand-logo-rb {
+        gap: 50px;
+    }
+
+    .container footer .navigation-row .brand-logo-rb a img {
+        width: 60px;
+        height: auto;
+    }
+
+    .container footer .copyright hr {
+        width: 100%;
+    }
+
+}

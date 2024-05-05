@@ -1,0 +1,111 @@
+@media (max-width: 1100px) {
+
+    .container header {
+        padding: 0px 100px;
+    }
+
+    .container main section#conta {
+        height: auto;
+    }
+
+    .container main section#conta .conta-place-main {
+        gap: 3rem;
+        flex-direction: column-reverse;
+    }
+
+    .container main section#conta .conta-place-main .section-form {
+        width: 90%;
+    }
+
+    .container main section#conta .conta-place-main .section-form form {
+        width: 100%;
+    }
+
+    .container main section#conta .conta-place-main .section-form textarea {
+        max-width: 980px;
+        min-width: 10rem;
+    }
+
+    .container main section#conta .conta-place-main .info-to-ct {
+        width: 90%;
+    }
+
+    .container main section#conta .conta-place-main .info-to-ct iframe {
+        width: 100%;
+    }
+
+    .container footer .navigation-row{
+        width: 85%;
+    }
+
+    .container footer .copyright hr {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .container header {
+        padding: 0px 10px;
+    }
+
+    .container footer .navigation-row{
+        width: 95%;
+    }
+
+    .container footer .copyright hr {
+        width: 97%;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .container header {
+        padding: 0px 10px;
+    }
+
+    .container footer .navigation-row {
+        flex-direction: column;
+        gap: .6rem;
+        padding: 0;
+        width: 88%;
+    }
+
+    .container footer .navigation-row .navigation-f ul li a {
+        font-size: 18pt;
+    }
+
+    .container footer .navigation-row .socials a i {
+        font-size: 27pt;
+    }
+
+    .container footer .navigation-row .brand-logo-rb {
+        gap: 50px;
+    }
+
+    .container footer .navigation-row .brand-logo-rb a img {
+        width: 60px;
+        height: auto;
+    }
+
+    .container footer .copyright hr {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 515px) {
+
+    .container header {
+        padding: 0;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .container header .logo a img {
+        display: none;
+    }
+
+}

@@ -1,0 +1,39 @@
+@media (max-width: 1300px) {
+
+    .container header .in-header {
+        padding: 0px 50px;
+    }
+
+    .container main section#cars-sell .cars-swiper-v-in .swiper .swiper-wrapper .swiper-slide {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container main section#cars-sell .cars-swiper-v-in .swiper .swiper-wrapper .swiper-slide .rg-car, .lf-car {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .container header .in-header {
+        padding: 0px 10px;
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 620px) {
+
+    .container header .in-header {
+        padding: 0px 10px;
+        justify-content: center;
+        gap: 0;
+    }
+    
+    .container header .in-header .logo a img{
+        display: none;
+    }
+}
