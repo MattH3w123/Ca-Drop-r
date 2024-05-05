@@ -22,7 +22,7 @@
     }
 
     .container main section#conta .conta-place-main .section-form textarea {
-        max-width: 980px;
+        max-width: 100%;
         min-width: 10rem;
     }
 
@@ -50,6 +50,11 @@
         padding: 0px 10px;
     }
 
+    .container main section#conta .conta-place-main .section-form textarea {
+        max-width: 100%;
+        min-width: 10rem;
+    }
+
     .container footer .navigation-row{
         width: 95%;
     }
@@ -64,6 +69,11 @@
 
     .container header {
         padding: 0px 10px;
+    }
+
+    .container main section#conta .conta-place-main .section-form textarea {
+        max-width: 100%;
+        min-width: 10rem;
     }
 
     .container footer .navigation-row {
