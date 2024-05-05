@@ -270,6 +270,10 @@
         display: none;
     }
 
+    .container main section#baner .header-bnr {
+        padding: 70px 10px 40px 10px;
+    }
+
     .container main section#pkaz .pkz-place {
         flex-direction: column;
         gap: 1.3rem;
@@ -327,7 +331,7 @@
     }
 
     .container main section#opis-zmg-2 .tech-table .lew-tech-t, .praw-tech-t {
-        width: 90%;
+        width: 100%;
     }
 
     .container main section#opis-zmg-4 .title-cont .tlt-logo h1, h2 {

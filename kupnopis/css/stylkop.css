@@ -487,11 +487,11 @@ section#opis-zmg-2 {
 }
 
 .tech-table {
-    width: 85%;
+    width: 89%;
     height: auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
     padding: 20px;
 }
@@ -501,7 +501,7 @@ section#opis-zmg-2 {
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 table {
@@ -547,7 +547,7 @@ table tr:nth-child(odd) {
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 section#vdio-car {
