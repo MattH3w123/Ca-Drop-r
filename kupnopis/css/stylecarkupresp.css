@@ -140,6 +140,17 @@
         width: 100%;
     }
 
+    .container main section#opis-zmg-3 .koszt-cara .img-place-cnk {
+        background: url(../img/bentley/6.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container main section#opis-zmg-3 .koszt-cara .img-place-cnk img {
+        display: none;
+    }    
+
     .container main section#opis-zmg-4 .title-cont .tlt-logo h1, h2 {
         word-break: break-word;
         text-align: center;

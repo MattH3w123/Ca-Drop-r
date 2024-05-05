@@ -606,6 +606,8 @@ section#opis-zmg-3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    border-radius: 30px;
 }
 
 .img-place-cnk img {
