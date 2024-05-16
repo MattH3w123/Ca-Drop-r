@@ -128,6 +128,27 @@ section#baner {
 }
 
 .bck-car-2 {
+    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img/cadilac/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bck-car-3 {
+    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img/ff/7.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bck-car- {
+    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bck-car- {
     background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img);
     background-position: center;
     background-repeat: no-repeat;
@@ -313,7 +334,7 @@ section#model {
 }
  
 .mdl-logo {
-    width: 20%;
+    max-width: 20%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -330,7 +351,7 @@ section#model {
 
 .model-img {
     width: 80%;
-    height: 45vh;
+    height: 53vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -481,7 +502,7 @@ section#opis-zmg-2 {
     height: auto;
     padding: 40px 0px;
     gap: 2.5rem;
-    background: linear-gradient(to left, #232526, #414345);
+    background: linear-gradient(to left, #1c2a2c, #274046);
     background-attachment: fixed;
     justify-content: flex-start;
 }
