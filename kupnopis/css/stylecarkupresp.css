@@ -51,7 +51,7 @@
     }
 
     .container main section#opis-zmg-3 .koszt-cara .img-place-cnk {
-        width: 100%;
+        width: 70%;
     }
 
     .container main section#opis-zmg-4 .title-cont .tlt-logo h1, h2 {
@@ -137,7 +137,7 @@
     }
 
     .container main section#opis-zmg-3 .koszt-cara .img-place-cnk {
-        width: 100%;
+        width: 80%;
     }
 
     .container main section#opis-zmg-3 .koszt-cara .im-pl-ck {
@@ -257,6 +257,14 @@
         width: 99%;
     }
 
+}
+
+@media (max-width: 777px) {
+
+    .container main section#opis-zmg-3 .koszt-cara .img-place-cnk {
+        width: 100%;
+    }
+    
 }
 
 @media (max-width: 600px) {

@@ -141,8 +141,8 @@ section#baner {
     background-size: cover;
 }
 
-.bck-car- {
-    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img);
+.bck-car-4 {
+    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img/rr/2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -622,7 +622,7 @@ section#opis-zmg-3 {
 }
 
 .img-place-cnk {
-    width: 90%;
+    width: 80%;
     height: 340px;
     display: flex;
     justify-content: center;
@@ -633,7 +633,7 @@ section#opis-zmg-3 {
 
 .img-place-cnk img {
     display: block;
-    width: auto;
+    width: fit-content;
     height: 100%;
     object-position: center;
     position: relative;
