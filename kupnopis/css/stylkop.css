@@ -148,8 +148,43 @@ section#baner {
     background-size: cover;
 }
 
+.bck-car-5 {
+    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img/amggt/13.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bck-car-6 {
+    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img/maybach/1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bck-car-7 {
+    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img/gclasssa/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bck-car-8 {
+    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img/amgs/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bck-car-9 {
+    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img/porshe/14.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .bck-car- {
-    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img);
+    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img/roycerolls/1);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -351,16 +386,22 @@ section#model {
 
 .model-img {
     width: 80%;
-    height: 53vh;
+    height: 54vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .swiper {
-    width: 70%;
+    width: 66%;
     height: 100%;
     border-radius: 10px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .swiper-slide img {

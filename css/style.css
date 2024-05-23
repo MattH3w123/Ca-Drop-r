@@ -36,6 +36,43 @@ body {
     height: 100vh;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden-fast {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(2px);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden-fast {
+        transition: none;
+    }
+}
+
+.show-fast {
+    opacity: 1;
+    filter: blur(0);
+}
+
+
 header {
     width: 100%;
     height: 60px;
@@ -321,13 +358,13 @@ section#opis-2 {
     min-height: 50vh;
 }
 
-.oth-bck-o-2 {
+/*.oth-bck-o-2 {
     background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .5)), url(../img/17569318_SL_092920_35860_04.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-}
+}*/
 
 .right-opis {
     width: 55%;
