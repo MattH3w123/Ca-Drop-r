@@ -242,7 +242,7 @@
                     <form method="post">
                         <label for="mjs"><span class="color-point">1</span>Wybierz miejscowość i Dealera:</label><br>
                         <div class="select-totght">
-                            <select name="mjs" id="mjs">
+                            <select name="mjs" id="mjs" required>
                                 <option  disabled selected value>Wybierz Miejscowość</option>
                                 <option value="Łódź">Łódź</option>
                                 <option value="Wrszawa">Wrszawa</option>
@@ -252,7 +252,7 @@
                                 <option value="Rzeszów">Rzeszów</option>
                                 <option value="Wrocław">Wrocław</option>
                             </select>
-                            <select name="mjs" id="mjs">
+                            <select name="mjs" id="mjsd" required>
                                 <option  disabled selected value>Wybierz Dealera</option>
                                 <option value="Łódź">Ca'Drop'r Łódź</option>
                                 <option value="Wrszawa">Ca'Drop'r Wrszawa</option>
@@ -266,22 +266,22 @@
                         <hr class="zamaw-line">
                         <label for="mjs"><span class="color-point">2</span>Dane kontaktowe:</label><br>
                         <div class="select-totght sl-l-ctr">
-                            <input type="text" name="imie" id="imie" placeholder="Imię:">
-                            <input type="text" name="naz" id="naz" placeholder="Nazwisko:">
+                            <input type="text" name="imie" id="imie" placeholder="Imię:" required>
+                            <input type="text" name="naz" id="naz" placeholder="Nazwisko:" required>
                         </div>
                         <div class="select-totght">
-                            <input type="number" name="phone" id="phone" min="0" placeholder="Numer telefonu:">
-                            <input type="email" name="emil" id="meil" placeholder="E-mail:"> 
+                            <input type="number" name="phone" id="phone" min="0" placeholder="Numer telefonu:" required>
+                            <input type="email" name="emil" id="meil" placeholder="E-mail:" required> 
                         </div>
                         <hr class="zamaw-line">
                         <div class="select-totght zgoda-pol">
                             <img src="./img/clipboard2.png" alt="chexk">
-                            <input type="checkbox" name="polityka" id="polityka">
+                            <input type="checkbox" name="polityka" id="polityka" required>
                             <label class="pol" for="politykaa">Potwierdzam zapoznanie się z klauzulą informacyjną dotyczącą przetwarzania <br> danych osobowych. <a href="../loading/load.html" style="color: red; font-size: 1.4rem;">Polityka prywatności.</a></label>
                         </div>
                         <hr class="zamaw-line">
                         <div class="zamow-end">
-                            <button>
+                            <button id="submt">
                                 <a href="../loading/load.html">Zamów</a>
                             </button>
                         </div>
@@ -335,6 +335,24 @@
             imgg.addEventListener("mouseout", function() {
             imgg.title = "";
             });
+        });
+
+        document.getElementById('submt').addEventListener('click', function(event) {
+            event.preventDefault();
+
+            var miejsce = document.getElementById('mjs').value;
+            var miejscedlr = document.getElementById('mjsd').value;
+            var name = document.getElementById('imie').value;
+            var surname = document.getElementById('naz').value;
+            var phone = document.getElementById('phone').value;
+            var email = document.getElementById('meil').value;
+            var polit = document.getElementById('polityka').value;
+
+            if (miejsce === '' || miejscedlr === '' || name === '' || surname === ''|| phone === '' || email === ''|| polit === '') {
+                alert('Uzupełnij pola!');
+            } else {
+                window.location.href = "../loading/load.html";
+            }
         });
     </script>
 </body>
