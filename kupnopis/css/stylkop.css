@@ -36,6 +36,44 @@ body {
     height: 100vh;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-10%);
+    transition: all .55s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden-fast {
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(10%);
+    transition: all .55s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden-fast {
+        transition: none;
+    }
+}
+
+.show-fast {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 header {
     width: 100%;
     height: 60px;
@@ -183,8 +221,8 @@ section#baner {
     background-size: cover;
 }
 
-.bck-car- {
-    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img/roycerolls/1);
+.bck-car-10 {
+    background: linear-gradient(to right, rgba(0, 0, 0, .3), rgba(0, 0, 0, .6)), url(../img/roycerolls/1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

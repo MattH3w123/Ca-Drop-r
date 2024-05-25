@@ -11,6 +11,9 @@
     <link rel="icon" href="./img/speedometer.png" type="image/icon">
 </head>
 <body>
+    <div id="wellcome-there">
+        <img src="./img/wepik-modern-gradient-silver-car-service-logo-20240429182452XSgw.png" alt="Ca'Drop'r">
+    </div>
     <div class="container">
         <header>
             <div class="in-header" id="new-heder">
@@ -36,7 +39,7 @@
                     </p>
                     <button><a href="./samochdy/cars.html"><span style="margin-right: 5px;">Cars</span>&#10147;</a></button>
                 </div>
-                <div class="cars-contr hidden-fast">
+                <div class="cars-contr hidden-rg">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide"><img src="./img/cars/Remove background project (5).png" alt="car" class="imgg" title="Źródło: https://www.motor1.com/news/626889/bentley-continental-gtc-mansory-vitesse/"></div>
@@ -70,7 +73,7 @@
             </section>
             <section id="opis-2">
                 <div class="text-contr-2">
-                    <iframe width="580" height="335" style="border-radius: 20px; margin-right: 2.1rem;" src="https://www.youtube.com/embed/uajOhQrhIsw?si=aC0SCKJMmQiLfGzF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="580" height="335" class="hidden-fast" style="border-radius: 20px; margin-right: 2.1rem;" src="https://www.youtube.com/embed/uajOhQrhIsw?si=aC0SCKJMmQiLfGzF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     <div class="right-opis">
                         <div class="title hidden">
                             <h1>Info</h1>
@@ -122,7 +125,7 @@
                     <div class="imge hidden">
                         <img src="./img/cardropr11.jpg" alt="car">
                     </div>
-                    <div class="texte hidden-fast">
+                    <div class="texte hidden-rg">
                         <p>
                             Ca'Drop'r specjalizuje się w modyfikacjach najbardziej prestiżowych marek samochodów,
                             takich jak Lamborghini, Ferrari, Bentley, Rolls-Royce i inne. Korzystając z najwyższej 
@@ -140,7 +143,7 @@
                             najbardziej wymagających klientów na całym świecie.
                         </p>
                     </div>
-                    <div class="imge hidden-fast">
+                    <div class="imge hidden-rg">
                         <img src="./img/cardropr12.jpg" alt="car">
                     </div>
                 </div>
@@ -148,7 +151,7 @@
                     <div class="imge hidden">
                         <img src="./img/cardropr13.jpg" alt="car">
                     </div>
-                    <div class="texte hidden-fast">
+                    <div class="texte hidden-rg">
                         <p>
                             Dzięki naszym modyfikacjom, marki, którymi się zajmujemy, zyskują nowy wymiar wartości i prestiżu. 
                             Ca'Drop'r nie tylko zmienia samochody, ale także redefiniuje ich markę, pozwalając im osiągnąć nieosiągalne
@@ -170,7 +173,7 @@
                              podróży.
                         </p>
                     </div>
-                    <div class="img-ctr-2 hidden-fast">
+                    <div class="img-ctr-2 hidden-rg">
                         <img src="./img/crdr3.jpg" alt="us">
                     </div>
                 </div>
@@ -285,6 +288,25 @@
 
         const hiddenElesecend = document.querySelectorAll('.hidden-fast');
         hiddenElesecend.forEach((el) => Secoundobserver.observe(el));
+
+        const throbserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show-rg');
+                } else {
+                    entry.target.classList.remove('show-rg');
+                }
+            });
+        });
+
+        const hiddenElethr = document.querySelectorAll('.hidden-rg');
+        hiddenElethr.forEach((el) => throbserver.observe(el));
+
+        setTimeout(() => {
+            document.getElementById('wellcome-there').classList.toggle('fade');
+        }, 700);
+        
     </script>
 </body>
 </html>

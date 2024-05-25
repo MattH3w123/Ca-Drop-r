@@ -29,14 +29,14 @@
                 <video loop autoplay muted>
                     <source src="./img/mylivewallpapers-com-Porsche-911-Carrera-FHD.mp4" type="video/mp4">
                 </video>
-                <div class="title">
+                <div class="title hidden-fast">
                     <h1>Contact with Us!</h1>
                 </div>
                 <div class="conta-place-main">
-                    <div class="info-to-ct">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14185.363877851465!2d-114.11334004134946!3d51.059702493246775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170039f843fd5%3A0x266d3bb1b652b63a!2sCalgary%2C%20Alberta%2C%20Kanada!5e0!3m2!1spl!2spl!4v1714409940694!5m2!1spl!2spl" width="430"  height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="info-to-ct hidden-fast">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462560.6827956668!2d54.897843286837016!3d25.076280454847193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2spl!4v1716654741932!5m2!1sen!2spl" width="400" height="430" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div class="section-form">
+                    <div class="section-form hidden-fast">
                         <form action="" method="post" name="forml">
                             <input type="text" name="nme" id="nme" placeholder="Name"><input type="text" name="fmnme" id="fmnme" placeholder="Family Name">
                             <input type="email" name="meil" id="meil" placeholder="E-mail">
@@ -48,7 +48,7 @@
             </section>
         </main>
         <footer id="foter">
-            <div class="navigation-row ">
+            <div class="navigation-row hidden-fast">
                 <div class="navigation-f">
                     <ul>
                         <li><a href="../index.html">Home</a></li>
@@ -62,11 +62,26 @@
                     <a href="https://github.com/MattH3w123" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>
-            <div class="copyright">
+            <div class="copyright hidden-fast">
                 <hr>
                 <p>&#169; Matthew Irzyk 2024. Educational use permitted.</p>
             </div>
         </footer>
     </div>
+    <script>
+        const Secoundobserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show-fast');
+                } else {
+                    entry.target.classList.remove('show-fast');
+                }
+            });
+        });
+
+        const hiddenElesecend = document.querySelectorAll('.hidden-fast');
+        hiddenElesecend.forEach((el) => Secoundobserver.observe(el));
+    </script>
 </body>
 </html>

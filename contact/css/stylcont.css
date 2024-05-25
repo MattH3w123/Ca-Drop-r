@@ -36,6 +36,23 @@ body {
     height: 100vh;
 }
 
+.hidden-fast {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden-fast {
+        transition: none;
+    }
+}
+
+.show-fast {
+    opacity: 1;
+    filter: blur(0);
+}
+
 header {
     width: 100%;
     height: 60px;

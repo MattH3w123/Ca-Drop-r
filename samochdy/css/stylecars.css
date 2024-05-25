@@ -42,6 +42,44 @@ body {
     overflow-y: hidden;
 }
 
+.hidden-l {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-10%);
+    transition: all .55s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden-l {
+        transition: none;
+    }
+}
+
+.show-l {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.hidden-r {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(10%);
+    transition: all .55s;
+}
+
+@media(prefers-reduced-motion) {
+    .hidden-r {
+        transition: none;
+    }
+}
+
+.show-r {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
 header {
     width: 100%;
     height: 60px;
