@@ -120,7 +120,6 @@ body {
 #wellcome-there.fade {
     opacity: 0;
     display: none;
-    z-index: -99;
 }
 
 header {
