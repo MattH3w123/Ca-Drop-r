@@ -119,6 +119,7 @@ body {
 
 #wellcome-there.fade {
     opacity: 0;
+    display: none;
 }
 
 header {
