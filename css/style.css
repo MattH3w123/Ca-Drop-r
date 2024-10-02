@@ -140,7 +140,7 @@ header {
 }
 
 .in-header {
-    width: fit-content;
+    width: auto;
     height: 60px;
     display: flex;
     justify-content: space-around;
@@ -152,7 +152,7 @@ header {
 }
 
 .better-h {
-    width: 100vw;
+    width: auto;
     margin: 16px 0px 0px 0px;
     justify-content: space-between;
     padding: 0px 100px;
