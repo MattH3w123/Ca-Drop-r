@@ -27,19 +27,27 @@
                         <li><a href="./contact/contact.html" target="_blank" rel="noopener noreferrer">Contact</a></li>
                     </ul>
                 </nav>
+                <div class="menu-aftr">
+                    <span><i class="fa-solid fa-bars fa-2xl" style="color: #fff;"></i></span>
+                </div>
             </div>
         </header>
         <main>
             <section id="baner">
-                <div class="text-contr hidden">
+                <video loop muted autoplay>
+                    <source src="./img/video/202407031052.mp4" type="video/mp4">
+                </video>
+                <div class="text-contr">
                     <h1>Ca'Drop'r</h1>
                     <h3>Trouvez la voiture parfaite pour vous.</h3>
-                    <p>
+                    <!--<p>
                         Odzwierciedlenie wyrafinowanego luksusu.
-                    </p>
+                    </p>-->
+                </div>
+                <div class="cars-bttn-d">
                     <button><a href="./samochdy/cars.html"><span style="margin-right: 5px;">Cars</span>&#10147;</a></button>
                 </div>
-                <div class="cars-contr hidden-rg">
+                <!--<div class="cars-contr">
                     <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide"><img src="./img/cars/Remove background project (5).png" alt="car" class="imgg" title="Źródło: https://www.motor1.com/news/626889/bentley-continental-gtc-mansory-vitesse/"></div>
@@ -50,7 +58,7 @@
                           <div class="swiper-slide"><img src="./img/cars/Remove background project.png" alt="car" title="Źródło: https://www.motor1.com/photos/847639/mansory-gronos-coupe-evo-c-mercedes-benz-g-class/#7160563_mansory-gronos-coupe-evo-c-mercedes-benz-g-class"></div>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </section>
             <section id="opis">
                 <div class="card-exp hidden-fast">
@@ -309,6 +317,13 @@
                 document.getElementById('wellcome-there').classList.toggle('none-well');
             }, 700)
         }, 700);
+
+        
+        menuShw = document.querySelector(".menu-aftr");
+        menuShw.onclick = function() {
+            navbr = document.querySelector("nav");
+            navbr.classList.toggle("active");
+        };
         
     </script>
 </body>

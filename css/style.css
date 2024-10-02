@@ -124,10 +124,11 @@ body {
 #wellcome-there.none-well {
     opacity: 0;
     z-index: -1;
+    display: none;
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -139,7 +140,7 @@ header {
 }
 
 .in-header {
-    width: 100%;
+    width: fit-content;
     height: 60px;
     display: flex;
     justify-content: space-around;
@@ -151,9 +152,9 @@ header {
 }
 
 .better-h {
-    width: 65%;
+    width: 100vw;
     margin: 16px 0px 0px 0px;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0px 100px;
     border-radius: 24px;
     background-color: rgba(0, 0, 0, .7);
@@ -210,6 +211,24 @@ nav ul li a:hover {
     background-color: rgba(0, 0, 0, .6);
 }
 
+.menu-aftr {
+    height: auto;
+    width: fit-content;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-in-out;
+    padding: 0px 15px;
+    cursor: pointer;
+    position: relative;
+    opacity: 1;
+}
+
+.menu-aftr:hover  {
+    opacity: .8;
+    background-color: rgba(0, 0, 0, .6);
+} 
+
 main {
     width: 100%;
     height: auto;
@@ -226,18 +245,31 @@ section {
 }
 
 section#baner {
-    height: 76vh;
+    height: 100vh;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    padding: 60px 20px 40px 20px;
-    gap: 90px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .89)), url(../img/luxury.jpg);
+    padding: 95px 20px 40px 20px;
+    gap: 0;
+    /*background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .89)), url(../img/luxury.jpg);
     background-position: center 56%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
     position: relative;
+}
+
+
+#baner video  {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center center;
+    filter: brightness(57%);
 }
 
 .text-contr {
@@ -246,7 +278,7 @@ section#baner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
     background-color: transparent;
     padding: 30px 20px;
@@ -265,21 +297,34 @@ section#baner {
 
 .text-contr h3 {
     color: white;
-    padding: 0px 0px 20px 2px;
+    padding: 15px 0px 20px 0px;
     font-size: 2.3rem;
     font-weight: 600;
     letter-spacing: 0.05rem;
+    text-align: center;
 }
 
 .text-contr p {
     color: rgb(255, 255, 255);
     font-weight: 500;
     font-size: 1.41rem;
-    text-align: justify;
-    padding: 0px 0px 25px 20px;
+    text-align: center;
+    padding: 0px 0px 25px 0px;
 }
 
-.text-contr button {
+.cars-bttn-d {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    background-color: transparent;
+    padding: 10px 20px 35px 20px;
+}
+
+.cars-bttn-d  button {
     width: auto;
     height: auto;
     border: none;
@@ -290,27 +335,27 @@ section#baner {
     background-color: transparent;
 }
 
-.text-contr button a {
+.cars-bttn-d  button a {
     width: 100%;
     height: 100%;
     text-decoration: none;
     padding: .55rem 1.5rem;
     color: white;
-    background-color: rgb(219, 44, 0);
+    background-color: rgb(61, 61, 61);
     border-radius: 15px 15px 15px 15px;
     opacity: 1;
     font-size: 1.8rem;
     font-weight: 600;
-    transition: .1s ease-in;
+    transition: .25s ease-in;
 }
 
-.text-contr button a:hover {
-    background-color: rgb(124, 25, 0);
-    border-radius: 0px 35px 0px 35px;
+.cars-bttn-d  button a:hover {
+    background-color: rgb(27, 27, 27);
+    border-radius: 0px 35px 35px 35px;
 }
 
-.cars-contr {
-    width: 41rem;
+/*.cars-contr {
+    width: 47rem;
     height: 28rem;
     display: flex;
     justify-content: end;
@@ -319,7 +364,7 @@ section#baner {
 }
 
 .swiper {
-    width: 81%;
+    width: 93%;
     height: 100%;
     border-radius: 10px;
 }
@@ -331,10 +376,10 @@ section#baner {
     object-position: center;
     border-radius: 10px;
     transform: scale(1.05);
-}
+}*/
 
 section#opis {
-    background: linear-gradient(to bottom,  #870000, #190a05);
+    background: linear-gradient(to top, #101111, #414345);
     background-attachment: fixed;
     display: flex;
     flex-direction: row;
@@ -399,7 +444,7 @@ span.line {
 }
 
 section#opis-2 {
-    background: linear-gradient(to bottom,  #870000, #190a05);
+    background: linear-gradient(to top, #101111, #414345);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -744,7 +789,7 @@ section#opis-gl {
 }
 
 footer {
-    background: linear-gradient(to bottom,  #870000, #190a05);
+    background: linear-gradient(to top, #101111, #414345);
     /*background: linear-gradient(to top, #000000, #434343);*/
     background-position: center;
     background-repeat: no-repeat;
